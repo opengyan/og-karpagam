@@ -1,0 +1,10 @@
+Object : WristWatch
+
+class WristWatch {
+	/*data members */
+	
+	byte minute, seconds;
+
+	/* member methods */
+
+}
