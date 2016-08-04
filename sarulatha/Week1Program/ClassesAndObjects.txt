@@ -6,5 +6,46 @@ class WristWatch {
 	byte minute, seconds;
 
 	/* member methods */
+	
+	int changeTime(byte minute, byte seconds) {}
 
+	void displayTime() {} 
 }
+
+
+Object : Telephone 
+
+class Telephone {
+	
+	/* data members */
+	
+	byte numbers[10];
+	char asterix, hash;
+
+	/*member methods */
+	
+	void incomingCall() {}
+
+	void outgoingCall() {}
+
+	void redial() {}
+}
+
+Object : Air conditioner
+
+class AirConditioner {
+	
+	/*data members */
+
+	short temperature, speed;
+
+	/* member methods */
+
+	int increaseTemperature(short temperature) {} // returns the new temperture
+
+	int decreaseTemperature(short temperature) {} // returns the new temperture
+
+	void changeSpeed(short speed) {} 
+}
+
+  
