@@ -1,0 +1,50 @@
+Q1)Given two lines of numbers, create a linked list of digits with first number and add the second number. Print the resultant Linked list. Eg.,
+
+Input:
+73
+5
+
+Processing:
+Create a linked list of structure 7->3
+add 5 to above linked list [73 + 5 = 78]
+Resulting linked list is: 7->8
+
+Output:
+78
+
+Input2:
+99
+1
+Output:
+100
+
+Input3:
+76
+5
+Output:
+81
+
+Q2)Nodes in a singly linked list has another random link to a node in the list. Clone this linked list.
+Hint:
+struct node {
+  int x;
+  struct node *next; //Next node in the list
+  struct node *random; //Any random node in the list, can be same node / valid node / null
+};
+Eg:
+Linked List: 1 -> 2 -> 3 -> 4 -> 5 -> 6
+             |    |    |    |    |    |
+	     V    v    v    v    v    v
+Random       5    6    1    2    2    3  
+
+Q3)Find the intersection point in two linked list. Eg.,
+Input:
+1->2->3->4->5->6
+A->B->3->4->5->6
+
+Output:
+3
+
+Q4) Usage of Void pointer
+
+
