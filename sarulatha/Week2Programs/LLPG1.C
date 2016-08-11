@@ -1,5 +1,7 @@
 #include<stdio.h>
-#include<conio.h>
+//#include<conio.h>
+#include <stdlib.h>
+#include <curses.h>
 
 struct node {
 	int data;
@@ -68,10 +70,10 @@ struct node* reverse(struct node *head) {
 	head = prev;
 	return head;
 }
-
-void main() {
+//Doesnt work for input 9 and -10
+int main() {
 	int n1, n2, dup;
-	clrscr();
+	//clrscr();
 	scanf("%d",&n1);
 	dup = n1;
 	while(dup != 0) {
@@ -83,4 +85,5 @@ void main() {
 	head = reverse(head);
 	display(head);
 	getch();
+        exit(0);
 }

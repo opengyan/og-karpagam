@@ -10,7 +10,7 @@ class WristWatch {
 	int changeTime(byte minute, byte seconds) {}
 
 	void displayTime() {} 
-}
+} //Badhri : How do you extend it to a wall clock ? or smartwatch
 
 
 Object : Telephone 
@@ -19,14 +19,14 @@ class Telephone {
 	
 	/* data members */
 	
-	byte numbers[10];
+	byte numbers[10]; //Badhri : What if it is ISD code?
 	char asterix, hash;
 
 	/*member methods */
 	
-	void incomingCall() {}
+	void incomingCall() {} //Badhri : What is the argument for the call? wouldnt it be incoming number?
 
-	void outgoingCall() {}
+	void outgoingCall() {} //Badhri : Return type ? engaged, dial tone, call waiting?
 
 	void redial() {}
 }

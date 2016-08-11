@@ -7,6 +7,7 @@ Program
 #include <stdio.h>
 int main()
 {
+    //Badhri : Avoid x,y,z,a,b,c,n variable names
     int n,i,j,num, count = 1;
     scanf("%d",&n);
     int a[n];
