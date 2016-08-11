@@ -1,0 +1,6 @@
+1) Array of size 8, implement a circular queue and isFull(), isEmpty()
+2) Implement priority queue with linked list
+3) Given an array and an integer k, find the maximum for each and every contiguous subarray of size k.
+A[] = {1,2,3,3,4,5,2,1,6}
+k= 3
+{3,3,4,5,5,5,6}
