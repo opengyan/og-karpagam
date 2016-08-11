@@ -1,0 +1,15 @@
+128
+-72
+----
+56
+----
+we get borrow in this session
+
+72
+-128
+----
+-56
+----
+here we won't borrow for (2)  how can we over come this problem sir
+
+
