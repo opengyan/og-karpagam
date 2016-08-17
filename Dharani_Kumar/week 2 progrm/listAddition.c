@@ -1,0 +1,176 @@
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct merge{
+	int data;
+	struct merge *next;
+}node;
+void print(node *,int);
+int main(){
+	node *num1=NULL,*num2=NULL,*nn=NULL,*cn=NULL,*temp=NULL,*temp1=NULL,*sum=NULL;
+	int n,carry,flag,num,num_1,min,max;
+	scanf("%i",&num);
+	scanf("%i",&num_1);
+	max=abs(num)>abs(num_1)?num:num_1;
+	min=abs(num)<=abs(num_1)?num:num_1;
+	n=max;
+	while(n){
+		nn=malloc(sizeof(node));
+		nn->data=n%10;
+		nn->next=NULL;
+		if(num1==NULL){
+			num1=nn;
+			cn=nn;
+		}
+		else{
+			cn->next=nn;
+			cn=nn;
+		}
+		n/=10;
+	}
+	n=min;
+	while(n){
+		nn=malloc(sizeof(node));
+		nn->data=n%10;
+		nn->next=NULL;
+		if(num2==NULL){
+			num2=nn;
+			cn=nn;
+		}
+		else{
+			cn->next=nn;
+			cn=nn;
+		}
+		n/=10;
+	}
+	temp=num1;
+	temp1=num2;
+	carry=0;
+	while((temp!=NULL)&&(temp1!=NULL)){
+		nn=malloc(sizeof(node));
+		nn->next=NULL;
+		flag=1;
+		temp->data+=carry;
+		if(((max>=0)&&(min<=0))||((max<=0)&&(min>=0))){
+			flag=0;
+			carry=0;
+			if((max<=0)){
+			if(abs(temp->data)<abs(temp1->data)){
+				carry=1;
+				temp->data-=10;
+			}
+		}
+		else if(min<=0){
+			if(abs(temp->data)<abs(temp1->data)){
+				carry=-1;
+				temp->data+=10;
+			}
+		}
+	}
+			nn->data=(temp->data+temp1->data);
+			if(abs(nn->data)>=10){
+				carry=(nn->data)/10;
+				nn->data=(nn->data%10);
+			}
+			else if(flag){
+				carry=0;
+			}
+		if(sum==NULL){
+			sum=nn;
+			cn=nn;
+		}
+		else{
+			cn->next=nn;
+			cn=nn;
+		}
+		temp=temp->next;
+		temp1=temp1->next;
+	}
+	flag=0;
+	while(temp!=NULL){
+		nn=malloc(sizeof(node));
+		nn->next=NULL;
+		nn->data=temp->data+carry;
+			if(nn->data>=10){
+				carry=(nn->data)/10;
+				nn->data=(nn->data%10);
+			}
+			else{
+				if(nn->data==0){
+				if(temp->data<0){
+					flag=1;
+				}
+				else{
+					flag=0;
+				}
+				}
+				else{
+					flag=0;
+				}
+				carry=0;
+			}
+		temp=temp->next;
+		cn->next=nn;
+		cn=nn;											
+	}
+	while(temp1!=NULL){
+		nn=malloc(sizeof(node));
+		nn->next=NULL;
+		nn->data=temp1->data+carry;
+			if(nn->data>=10){
+				carry=(nn->data)/10;
+				nn->data=(nn->data%10);
+			}
+			else{
+				if(nn->data==0){
+				if(temp1->data<0){
+					flag=1;
+				}
+				else{
+					flag=0;
+				}
+				}
+				else{
+					flag=0;
+				}
+				carry=0;
+			}
+		temp1=temp1->next;
+		cn->next=nn;
+		cn=nn;											
+	}
+	if(carry!=0){
+		nn=malloc(sizeof(node));
+		nn->next=NULL;
+		nn->data=carry;
+		cn->next=nn;
+	}
+	if(flag){
+	while(temp){
+		if(temp->data!=0){
+			if(temp->data<0){
+				flag=1;
+			}
+			else if(temp->data>0){
+				flag=0;
+			}
+		}
+		temp=temp->next;
+	}
+}
+printf("\n");
+	print(sum,flag);
+}
+void print(node *temp,int flag){
+	if(temp->next==NULL){
+		if((temp->data==0)&&flag){
+			printf("-");
+		}
+		else{
+			printf("%i",temp->data);
+		}		
+	}
+	else{
+		print(temp->next,flag);
+		printf("%i",abs(temp->data));
+	}
+}
