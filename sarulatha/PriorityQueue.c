@@ -102,15 +102,15 @@ void display(struct node *head) {
 
 int main() {
 
-    int n, i, val, p;
+    int iNum, iLoop, iData, iPriority;
 
-    scanf("%d",&n);
+    scanf("%d",&iNum);
 
-    for(i = 0; i < n; i++) {
+    for(iLopp = 0; iLoop < iNum; iLoop++) {
 
-        scanf("%d %d",&val, &p);
+        scanf("%d %d",&iData, &iPriority);
 
-        head = enqueue(head, val, p);
+        head = enqueue(head, iData, iPriority);
 
     }
 
