@@ -100,3 +100,5 @@ void DisplayQueue() {
     }
     printf("\n");
 }
+
+//Neat indent and variable names. Display though keeps the index as 1 for first number in queue. normally it could be that first slot is empty.

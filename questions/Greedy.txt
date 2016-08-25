@@ -1,0 +1,19 @@
+1) Given an array of jobs where every job has a deadline and associated profit if the job is finished before the deadline. 
+It is also given that every job takes one day to finish and therefore, the minimum possible deadline for any job is 1. 
+How to maximize total profit if only one job can be scheduled on a day.
+
+Example :
+Input: Four Jobs with following deadlines and profits
+  JobID    Deadline      Profit
+    a        4            20   
+    b        1            10
+    c        1            40  
+    d        1            30
+Output: Following is maximum profit sequence of jobs
+        c, a
+
+
+2) Given a text, generate huffman code for it.
+Input:
+A greedy algorithm is an algorithm that follows the problem solving heuristic of making the locally optimal choice at each stage with the hope of finding a global optimum. In many problems, a greedy strategy does not in general produce an optimal solution, but nonetheless a greedy heuristic may yield locally optimal solutions that approximate a global optimal solution in a reasonable time.
+
