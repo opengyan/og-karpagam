@@ -54,7 +54,7 @@ int main()
 {
 	struct node * root=NULL;
 	string inputString;
-	cin>>inputString;
+	getline(cin,inputString);
 	map<char ,int> frequency;
 	frequency.clear();
 	for(int i=0;i<inputString.length();i++){
