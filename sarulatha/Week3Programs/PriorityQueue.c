@@ -1,6 +1,17 @@
 #include<stdio.h>
 
+/*
+./a.out 
+3 
+1 1
+2 2
+3 3
 
+
+Dequeued
+Queue underflow
+Queue underflow
+*/
 
 struct node {
 
@@ -106,7 +117,7 @@ int main() {
 
     scanf("%d",&iNum);
 
-    for(iLopp = 0; iLoop < iNum; iLoop++) {
+    for(iLoop = 0; iLoop < iNum; iLoop++) {
 
         scanf("%d %d",&iData, &iPriority);
 

@@ -12,6 +12,7 @@ int main()
 
     int iArr[iSize], k, iMax = INT_MIN, front = 0, rear = 0;
 
+    //Fails if character is given as input
     for(iloop = 0; iloop < iSize; iloop++)
 
         scanf("%d",&iArr[iloop]);

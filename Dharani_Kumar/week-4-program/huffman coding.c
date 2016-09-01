@@ -1,3 +1,10 @@
+/*
+./a.out 
+she sells sea shells on the sea shore
+e 0
+s 10
+h 11
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
