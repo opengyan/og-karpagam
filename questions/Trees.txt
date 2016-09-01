@@ -1,0 +1,16 @@
+1) Find ‘n’th smallest element in a given set of numbers using trees
+
+2) Given a balanced BST, find two numbers whose sum which match the given number
+
+Given :
+            15
+      10         20
+ 8        12   16   25
+
+Number : 32,
+Output : 20, 12
+
+3) Print a given binary tree in breadth first mode
+For above tree, output is :
+15, 10, 20, 8, 12, 16, 25
+
