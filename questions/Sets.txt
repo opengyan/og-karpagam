@@ -1,0 +1,5 @@
+1) Find and print the longest positive subsequence in an array arr[] = {1,2,-1,2,3,1,-9,-10,123}
+2) Implement a simple hash function to print hash for a file [length / sum of values / date of creation / user name / ..]
+4) Given two sets find the union of the two sets
+5) Write a json structure for your id card
+6) Convert a database table row to json
