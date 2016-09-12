@@ -1,0 +1,19 @@
+{student
+	idcard{
+		"Name": "Sarulatha S",
+		"Roll Number": "14F135",
+		"Department": "IT",
+		"Course Duration": "2014 - 2018",
+		"Address": {
+			"DoorNo": "10",
+			"Street": "Maniyagaran Kadu",
+			"Town": "Mettupalayam",
+			"City": "Coimbatore",
+			"State": "Tamil Nadu",
+			"Pincode": "641301"
+		},
+		"Blood group": "A +ve",
+		"Date of birth": "21-11-1996",
+		"Phone": "8220855738"
+	}
+}
