@@ -1,15 +1,17 @@
 {
 	"studentIDentity": [{
 		"name": [{
-			"firstName": "Dinesh"
+			"firstName": "vignesh"
 		}, {
-			"lastName": "Raja.N"
+			"lastName": "balusami"
 		}]
 	}, {
 		"course": [{
-			"degree": "B.TECH"
-		}, {
-			"department": "Information Technology"
+			"degree": "B.E"
+		},{
+			"department":"Computer Science and Engineering"
+		},{
+			"class":"CSE-B"
 		}]
 	}, {
 		"batch": [{
@@ -21,9 +23,9 @@
 		"bloodGroup": "O +ve"
 	}, {
 		"dateOfBirth": [{
-			"date": "19"
+			"date": "02"
 		}, {
-			"month": "09"
+			"month": "08"
 		}, {
 			"year": "1996"
 		}]
