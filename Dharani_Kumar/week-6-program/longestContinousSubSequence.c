@@ -1,3 +1,17 @@
+/*
+ENTER ARRAY SIZE : 10
+-1
+1
+-2
+1
+-3
+-3
+1
+2
+3
+-5
+-3  1  2  3  
+*/
 #include<stdio.h>
 int main(){
 	int arraySize,temp,maxStartIndex=-1,maxEndIndex,subStartIndex,subEndIndex,flag=1;

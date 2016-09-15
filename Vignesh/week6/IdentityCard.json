@@ -2,7 +2,7 @@
 	"studentIDentity": [{
 		"name": [{
 			"firstName": "vignesh"
-		}, {
+		}, { //Why structure instead of normal key value ?
 			"lastName": "balusami"
 		}]
 	}, {

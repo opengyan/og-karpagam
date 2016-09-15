@@ -1,3 +1,21 @@
+/*
+enter first set size
+5
+1
+1
+2
+2
+3
+enter second set size
+5
+1
+2
+3
+4
+5
+resultant set is
+ 1 1 2 2 3 4 5
+*/
 #include <iostream>     
 #include <algorithm>   
 #include <vector>       
