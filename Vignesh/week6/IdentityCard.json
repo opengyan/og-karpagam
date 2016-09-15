@@ -1,0 +1,45 @@
+{
+	"studentIDentity": [{
+		"name": [{
+			"firstName": "vignesh"
+		}, {
+			"lastName": "balusami"
+		}]
+	}, {
+		"course": [{
+			"degree": "B.E"
+		},{
+			"department":"Computer Science and Engineering"
+		},{
+			"class":"CSE-B"
+		}]
+	}, {
+		"batch": [{
+			"start": "2014"
+		}, {
+			"end": "2018"
+		}]
+	}, {
+		"bloodGroup": "O +ve"
+	}, {
+		"dateOfBirth": [{
+			"date": "02"
+		}, {
+			"month": "08"
+		}, {
+			"year": "1996"
+		}]
+	}, {
+		"address": [{
+			 {"village":"Ponneripatti"}
+		, {
+			 "Maniyarathottam"
+		}, {
+			 "Post":"Unjappallayam"
+		}, {
+			 "Distic":"Namakkal"
+		}]
+	}, {
+		"phone": "9629527058"
+	}]
+}
