@@ -35,13 +35,20 @@ int main(){
 	}
 	if(flag){
 		maxEndIndex=temp-1;
+	}
+	else if(subStartIndex!=-1){
+		subEndIndex=temp-1;
+		if((subEndIndex-subStartIndex)>=(maxEndIndex-maxStartIndex)){
+			maxStartIndex=subStartIndex;
+			maxEndIndex=subEndIndex;
+		}		
+	}
+	flag=1;
+	for(temp=maxStartIndex;temp<=maxEndIndex&&(maxStartIndex!=-1);temp++){
+		printf("%i  ",array[temp]);
 		flag=0;
 	}
-	if(flag){
-		for(temp=maxStartIndex;temp<=maxEndIndex;temp++)
-			printf("%i  ",array[temp]);
-		return 0;
-	}
-	printf("INVALID");
+	if(flag)
+		printf("INVALID");
 	return 0;
 }
