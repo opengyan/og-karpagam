@@ -1,17 +1,3 @@
-/*
-ENTER ARRAY SIZE : 10
--1
-1
--2
-1
--3
--3
-1
-2
-3
--5
--3  1  2  3  
-*/
 #include<stdio.h>
 int main(){
 	int arraySize,temp,maxStartIndex=-1,maxEndIndex,subStartIndex,subEndIndex,flag=1;
@@ -43,7 +29,7 @@ int main(){
 			subStartIndex=-1;
 		}
 		else{
-			if(subStartIndex==-1)
+			if(subStartIndex==-1&&array[temp]>=0)
 				subStartIndex=temp;
 		}
 	}
