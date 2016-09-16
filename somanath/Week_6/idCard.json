@@ -1,5 +1,5 @@
 {
-	sudentDetails:[{
+	"sudentDetails":[{
 		"name":[{
 			"firstName":"StudentFirstName"
 			},{
@@ -12,7 +12,7 @@
 			"department":"studentCourse"
 		}]
 	},{
-		"batch:[{
+		"batch":[{
 			"start":"startYear"
 		},{
 			"end":"endyear"
