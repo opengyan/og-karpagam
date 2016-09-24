@@ -69,4 +69,34 @@ public class BinarySearchTree {
 				queue.add(node.getRight());
 		}
 	}
+
+	
+	public void findSum(int sum){
+		if(!findSum(sum,root)){
+			System.out.println("None of the pairs form the given sum");
+		}
+	}
+	private boolean findSum(int sum ,Node r){
+		if(r==null)
+			return false;
+		int key = sum - r.getElement();
+		Node node = containsKey(key,r);
+		if(node!=null){
+			System.out.println("Numbers exists");
+			System.out.println(node.getElement()+"+"+r.getElement()+"="+sum);
+			return true;
+		}
+		return findSum(sum,r.getLeft()) || findSum(sum,r.getRight());
+	}
+	private Node containsKey(int key,Node r){
+		if(r==null)
+			return null;
+		if(key == r.getElement())
+			return r;
+		else if(r.getElement() > key)
+			return containsKey(key,r.getLeft());
+		else
+			return containsKey(key,r.getRight());
+				
+	}
 }
