@@ -1,10 +1,10 @@
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class BinarySearchTree {
 	private Node root;
-	private int array[];
 	public BinarySearchTree(int[] array) {
 		super();
-		this.array = array;
 		for(int val:array){
 			root = insert(root,val);
 		}
@@ -36,7 +36,6 @@ public class BinarySearchTree {
 	private int getKthSmallest(Node r,int k){
 		if(r==null)
 			return -1;
-		System.out.println("Node:"+r.getElement()+" k:"+k);
 		int leftNodes= countNodes(r.getLeft());
 		if(k == leftNodes+1)
 			return r.getElement();
@@ -50,5 +49,24 @@ public class BinarySearchTree {
 			return 0;
 		else
 			return countNodes(r.getLeft()) + countNodes(r.getRight()) +1 ;
+	}
+	
+	public void breadthFirst(){
+		breadthFirst(root);
+	}
+	private void breadthFirst(Node r){
+		Queue<Node> queue = new LinkedList<Node>();
+		if(r==null)
+			return ;
+		queue.clear();
+		queue.add(root);
+		while(!queue.isEmpty()){
+			Node node = queue.remove();
+			System.out.print(node.getElement()+" ");
+			if(node.getLeft()!=null)
+				queue.add(node.getLeft());
+			if(node.getRight()!=null)
+				queue.add(node.getRight());
+		}
 	}
 }
